@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="collectors">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="collector" minOccurs="0" maxOccurs="unbounded">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="brand" type="xsd:string"/>
+                            <xsd:element name="country">
+                                <xsd:simpleType>
+                                    <xsd:restriction base = "xsd:string">
+                                        <xsd:enumeration value = "Germany"/>
+                                        <xsd:enumeration value = "China"/>
+                                        <xsd:enumeration value = "Japan"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+                            <xsd:element name="price" type="xsd:positiveInteger"/>
+                        </xsd:sequence>
+                        <xsd:attribute name="id" type="xsd:positiveInteger" use="required"/>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

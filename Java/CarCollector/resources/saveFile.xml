@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<collectors>
+    <collector id="1">
+        <brand>BMW</brand>
+        <country>Germany</country>
+        <price>120000</price>
+    </collector>
+    <collector id="2">
+        <brand>MB</brand>
+        <country>Germany</country>
+        <price>150000</price>
+    </collector>
+    <collector id="3">
+        <brand>Toyota</brand>
+        <country>Japan</country>
+        <price>80000</price>
+    </collector>
+</collectors>
